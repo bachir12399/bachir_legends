@@ -62,9 +62,17 @@
     <a class="tele" href="https://t.me/Hahahahahhaha11" target="_blank">Telegram</a>
     <div class="footer">Developed ❤️ by Bachir</div>
   </div>
-  <audio autoplay loop>
+  <audio id="bgMusic" loop>
   <source src="bachr.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
-  </audio>
+</audio>
+
+<script>
+  // شغّل الموسيقى بعد أول لمسة على الشاشة
+  document.addEventListener('click', function () {
+    var music = document.getElementById('bgMusic');
+    music.play();
+  }, { once: true });
+</script>
 </body>
 </html>
